@@ -4,11 +4,11 @@ const crushName = prompt('What si your crush\'s name?');
 
 function loveCalculator () {
 
-    const percentage = (Math.floor((Math.random() * 100) + 1)) + '%';
+    const percentage = Math.floor(Math.random() * 100) + 1;
 
     let message;
     
-    if (percentage >= 80) {
+    if (percentage >= 70) {
         message = 'WOW! That\'s love!';
     } else if (percentage >= 30) {
         message = 'You look good together :)';
@@ -18,18 +18,18 @@ function loveCalculator () {
 
     return {
 
-        percentage,
-        message
+        percentage: percentage + '%',
+        message: message
     };
 
 }
 
-const love = loveCalculator();
+const loveResult = loveCalculator();
 
 console.log('Your name: ' + yourName);
 
 console.log('Your crush\'s name: ' + crushName);
 
-console.log('Your love percentage is : ' + loveCalculator.percentage);
+console.log('Your love percentage is : ' + loveResult.percentage);
 
-console.log(loveCalculator.message);
+console.log(loveResult.message);
