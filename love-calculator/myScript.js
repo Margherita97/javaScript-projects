@@ -4,7 +4,7 @@ const crushName = prompt('What si your crush\'s name?');
 
 function loveCalculator () {
 
-    const percentage = Math.floor((Math.random() * 100) + 1);
+    const percentage = (Math.floor((Math.random() * 100) + 1)) + '%';
 
     let message;
     
@@ -23,3 +23,13 @@ function loveCalculator () {
     };
 
 }
+
+const love = loveCalculator();
+
+console.log('Your name: ' + yourName);
+
+console.log('Your crush\'s name: ' + crushName);
+
+console.log('Your love percentage is : ' + loveCalculator.percentage);
+
+console.log(loveCalculator.message);
