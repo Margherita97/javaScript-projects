@@ -1,6 +1,6 @@
-const yourName = console.log('What is your name?');
+const yourName = document.getElementById(yourName).value;
 
-const crushName =  console.log('What is your crush\'s name?');
+const crushName =  document.getElementById(crushName).value;
 
 function loveCalculator () {
 
