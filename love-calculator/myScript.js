@@ -1,6 +1,6 @@
-const yourName = prompt('What is your name?');
+const yourName = console.log('What is your name?');
 
-const crushName = prompt('What si your crush\'s name?');
+const crushName =  console.log('What is your crush\'s name?');
 
 function loveCalculator () {
 
