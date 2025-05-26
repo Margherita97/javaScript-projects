@@ -2,6 +2,7 @@
     --background-color: #FCC8D1;
     --primary-text: #D14D72;
     --secondary-text: #7A4E58;
+    --button-background: #D14D72;
 }
 
 body {
@@ -43,6 +44,20 @@ h1 {
 
 h2 {
     text-align: center;
+    font-weight: 700;
+}
+
+#calculateBtn {
+    align-self: center;
+    margin-top: 3rem;
+    border-radius: 30px;
+    padding: 0.8rem 0.8rem;
+    width: 11rem;
+    background-color: var(--button-background);
+    border: none;
+    color: var(--background-color);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
     font-weight: 700;
 }
 
