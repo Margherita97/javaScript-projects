@@ -3,6 +3,7 @@
     --primary-text: #D14D72;
     --secondary-text: #7A4E58;
     --button-background: #D14D72;
+    --button-text: #FFFFFF;
 }
 
 body {
@@ -49,13 +50,13 @@ h2 {
 
 #calculateBtn {
     align-self: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
+    border: var(--button-text) 0.1rem solid;
     border-radius: 30px;
     padding: 0.8rem 0.8rem;
     width: 11rem;
     background-color: var(--button-background);
-    border: none;
-    color: var(--background-color);
+    color: var(--button-text);
     font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
     font-weight: 700;
