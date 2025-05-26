@@ -28,6 +28,11 @@ header {
     justify-content: center;
 }
 
+#calculator {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     font-family: 'Dancing Script', cursive;
     color: var(--primary-text);
