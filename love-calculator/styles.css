@@ -1,3 +1,9 @@
+:root {
+    --background-color: #FCC8D1;
+    --primary-text: #D14D72;
+    --secondary-text: #7A4E58;
+}
+
 body {
     height: 100vh;
     margin: 0;
