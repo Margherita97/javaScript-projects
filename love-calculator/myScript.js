@@ -27,3 +27,6 @@ function loveCalculator () {
 const loveResult = loveCalculator();
 
 document.getElementById('userNames').textContent = `${yourName} ❤️ ${crushName}`;
+document.getElementById('lovePercentage').textContent = `Love percentage: ${loveResult.percentage}`
+document.getElementById('loveMessage').textContent = loveResult.message;
+
