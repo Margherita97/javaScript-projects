@@ -26,10 +26,4 @@ function loveCalculator () {
 
 const loveResult = loveCalculator();
 
-console.log('Your name: ' + yourName);
-
-console.log('Your crush\'s name: ' + crushName);
-
-console.log('Your love percentage is : ' + loveResult.percentage);
-
-console.log(loveResult.message);
+document.getElementById('userNames').textContent = `${yourName} ❤️ ${crushName}`;
