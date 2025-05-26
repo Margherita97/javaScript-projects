@@ -1,6 +1,22 @@
-const yourName = document.getElementById(yourName).value;
+document.getElementById('CalculateBtn').addEventListener('click', function(){
 
-const crushName =  document.getElementById(crushName).value;
+const yourName = document.getElementById(yourName).value.trim();
+const crushName =  document.getElementById(crushName).value.trim();
+
+if(!yourName || !crushName) {
+    alert('Please enter both names!');
+    return;
+}
+
+
+const loveResult = loveCalculator();
+
+document.getElementById('userNames').textContent = `${yourName} ❤️ ${crushName}`;
+document.getElementById('lovePercentage').textContent = `Love percentage: ${loveResult.percentage}`
+document.getElementById('loveMessage').textContent = loveResult.message;
+});
+
+
 
 function loveCalculator () {
 
@@ -24,9 +40,5 @@ function loveCalculator () {
 
 }
 
-const loveResult = loveCalculator();
 
-document.getElementById('userNames').textContent = `${yourName} ❤️ ${crushName}`;
-document.getElementById('lovePercentage').textContent = `Love percentage: ${loveResult.percentage}`
-document.getElementById('loveMessage').textContent = loveResult.message;
 
