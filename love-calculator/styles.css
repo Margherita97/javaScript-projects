@@ -2,8 +2,8 @@
     --background-color: #FCC8D1;
     --primary-text: #D14D72;
     --secondary-text: #7A4E58;
-    --button-background: #D14D72;
     --button-text: #FFFFFF;
+    --button-hover: #FFABAB;
 }
 
 body {
@@ -55,11 +55,19 @@ h2 {
     border-radius: 30px;
     padding: 0.8rem 0.8rem;
     width: 11rem;
-    background-color: var(--button-background);
+    background-color: var(--primary-text);
     color: var(--button-text);
     font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
     font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#calculateBtn:hover {
+    background-color: var(--button-hover);
+    border: var(--primary-text  0.1rem solid);
+    color: var(--primary-text); 
 }
 
 .results {
