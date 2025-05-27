@@ -62,6 +62,9 @@ h2 {
     font-weight: 700;
 }
 
+.results {
+    margin: 3rem 0;
+}
 
 .results p {
     font-family: 'Quicksand', sans-serif;
