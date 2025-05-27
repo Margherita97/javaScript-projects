@@ -37,6 +37,12 @@ header {
     font-family: 'Quicksand', sans-serif;
     color: var(--primary-text);
     font-weight: 600;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    outline: none;
+    border: var(--primary-text) 0.2rem solid;
 }
 
 #calculator {
