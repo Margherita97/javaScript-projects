@@ -3,7 +3,7 @@
     --primary-text: #D14D72;
     --secondary-text: #7A4E58;
     --button-text: #FFFFFF;
-    --button-hover: #FFABAB;
+    --button-hover: #B03A5B;
 }
 
 body {
@@ -81,8 +81,8 @@ h2 {
 
 #calculateBtn:hover {
     background-color: var(--button-hover);
-    border: var(--primary-text) 0.1rem solid;
-    color: var(--primary-text); 
+    border: var(--button-hover) 0.1rem solid;
+    color: var(--button-text); 
 }
 
 .results {
